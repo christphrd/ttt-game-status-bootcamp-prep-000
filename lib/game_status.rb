@@ -57,5 +57,11 @@ def over?(board)
 end
 
 def winner?(board)
-  win_move = won?(board)
+  if won?(board) != false
+    win_move = won?(board)
+    random_position = win_move[0]
+    return board[random_position]
+  else
+    return nil
+  end
 end
