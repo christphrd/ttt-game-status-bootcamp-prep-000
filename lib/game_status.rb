@@ -37,9 +37,5 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all?{|position| position == "X" || "O"}
-    return true
-  else
-    return false
-  end
+  board.all?{|position| position == "X" || "O"}
 end
