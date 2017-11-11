@@ -37,7 +37,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |position|
-    position == "X" || "O"
+  board.each do |position|
+    if position != "X" || "O"
+      return false
   end
 end
