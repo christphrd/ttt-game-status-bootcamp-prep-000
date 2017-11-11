@@ -41,5 +41,4 @@ def full?(board)
     if position != "X" || "O"
       return false
   end
-  return true
 end
