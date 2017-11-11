@@ -56,7 +56,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   if won?(board) != false
     win_move = won?(board)
     random_position = win_move[0]
