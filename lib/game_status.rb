@@ -29,4 +29,5 @@ def won?(board)
       return win_combination
     end
   end
+  board.include?("X") || board.include?("O")
 end
