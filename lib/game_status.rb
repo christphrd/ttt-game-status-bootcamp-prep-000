@@ -32,5 +32,5 @@ def won?(board)
   if !board.include?("X") || !board.include?("O")
     return false
   else
-    return
+    return false
 end
